@@ -18,6 +18,8 @@ export default function Home() {
   };
 
   return (
+    <section>
+      
     <main
       ref={heroRef}
       onMouseMove={handleMouseMove}
@@ -26,12 +28,18 @@ export default function Home() {
       {/* Grid */}
       <div className="pointer-events-none absolute inset-0 grid-bg" />
 
-      {/* Text
+      {/* Text */}
       <h1 className="relative z-10 text-white uppercase text-[clamp(4rem,12vw,10rem)] font-semibold tracking-tight">
         owled
-      </h1> */}
+      </h1>
 
-      <Temp />
     </main>
+    <div>
+      <Temp />
+      <div>
+        <Temp />
+      </div>
+    </div>
+    </section>
   );
 }

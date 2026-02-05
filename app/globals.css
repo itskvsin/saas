@@ -12,12 +12,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -35,12 +35,12 @@ body {
   mask-image: radial-gradient(
     circle 400px at var(--x, 50%) var(--y, 50%),
     white 0%,
-    transparent 10%
+    transparent 90%
   );
 
   -webkit-mask-image: radial-gradient(
     circle 400px at var(--x, 50%) var(--y, 50%),
     white 0%,
-    transparent 10%
+    transparent 90%
   );
 }
