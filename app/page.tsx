@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Temp from "./components/temp/temp";
+import Animation from "./components/textParallexAnimations/Animation";
 
 export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -19,27 +20,26 @@ export default function Home() {
 
   return (
     <section>
-      
-    <main
-      ref={heroRef}
-      onMouseMove={handleMouseMove}
-      className="relative flex h-screen w-screen items-center justify-center bg-black"
-    >
-      {/* Grid */}
-      <div className="pointer-events-none absolute inset-0 grid-bg" />
-
-      {/* Text */}
-      <h1 className="relative z-10 text-white uppercase text-[clamp(4rem,12vw,10rem)] font-semibold tracking-tight">
-        owled
-      </h1>
-
-    </main>
-    <div>
-      <Temp />
+      <div>
+        <Animation />
+      </div>
       <div>
         <Temp />
       </div>
-    </div>
+      <div className="bg-black h-screen w-screen">
+        {/* <Temp /> */}
+      </div>
     </section>
   );
 }
+//  <main
+//         ref={heroRef}
+//         onMouseMove={handleMouseMove}
+//         className="relative flex h-screen w-screen items-center justify-center bg-black"
+//       >
+//         <div className="pointer-events-none absolute inset-0 grid-bg" />
+
+//         <h1 className="relative z-10 text-white uppercase text-[clamp(4rem,12vw,10rem)] font-semibold tracking-tight">
+//           owled
+//         </h1>
+//       </main>
